@@ -155,32 +155,50 @@ module.exports = configure(function (ctx) {
         theme_color: '#027be3',
         icons: [
           {
-            src: 'icons/icon-128x128.png',
-            sizes: '128x128',
-            type: 'image/png'
+            'src': 'icons/icon-128x128.png',
+            'sizes': '128x128',
+            'type': 'image/png'
           },
           {
-            src: 'icons/icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
+            'src': 'icons/icon-192x192.png',
+            'sizes': '192x192',
+            'type': 'image/png'
           },
           {
-            src: 'icons/icon-256x256.png',
-            sizes: '256x256',
-            type: 'image/png'
+            'src': 'icons/icon-256x256.png',
+            'sizes': '256x256',
+            'type': 'image/png'
           },
           {
-            src: 'icons/icon-384x384.png',
-            sizes: '384x384',
-            type: 'image/png'
+            'src': 'icons/icon-384x384.png',
+            'sizes': '384x384',
+            'type': 'image/png'
           },
           {
-            src: 'icons/icon-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
+            'src': 'icons/icon-512x512.png',
+            'sizes': '512x512',
+            'type': 'image/png'
           }
         ]
+      },
+
+
+      // variables used to inject specific PWA
+      // meta tags (below are default values)
+      metaVariables: {
+        appleMobileWebAppCapable: 'yes',
+        appleMobileWebAppStatusBarStyle: 'default',
+        appleTouchIcon120: 'icons/apple-icon-120x120.png',
+        appleTouchIcon180: 'icons/apple-icon-180x180.png',
+        appleTouchIcon152: 'icons/apple-icon-152x152.png',
+        appleTouchIcon167: 'icons/apple-icon-167x167.png',
+        appleSafariPinnedTab: 'icons/safari-pinned-tab.svg',
+        msapplicationTileImage: 'icons/ms-icon-144x144.png',
+        msapplicationTileColor: '#000000'
       }
+
+
+
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/developing-cordova-apps/configuring-cordova
